@@ -1,38 +1,35 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  font-size: 18px;
+  background-color: #f5f6f7;
+}
+
+h1{
+  max-width: 940px;
+  font-size: 2.5em; /* em es un factor relativo al tamano de la letra de su contenedor ej: si el contenedor tiene 10px este sera 2.5 veces ese valor*/
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.1; /*Altura entre lineas*/
+  margin: 40px 0; /* Superior Inferior   |   Derecho Izquierdo*/ 
+}
+
+.App{
+  min-height: 100vh; /*Esto hace que la aplicasion tome como minimo el 100% del tamano del navegador verticalente*/
+  display: flex;
+  flex-wrap: wrap; /*Si un elemento toma todo el tamano de un contenedor, los demas elementos se ubicaran debajo de el*/
+  align-items: center;/*Centrar verticalmente*/
+  justify-content: center; /*Centrar horizontalmente*/
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contenedor-principal{
+  min-height: 600px; /*Dependiendo la cantidad de testimonios que tengamos el contenedor se va a adaptar*/
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
